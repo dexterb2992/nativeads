@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('home', function () {
+	return view('sample');
+})->middleware('guest');
+
+Route::get('adverts', function () {
+	return view('adverts')->withTitle('Adverts');
+})->name('adverts');

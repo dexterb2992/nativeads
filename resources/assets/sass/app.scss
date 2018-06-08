@@ -1,9 +1,73 @@
+.navbar {
+	.navbar-nav {
+		li {
+			a:hover {
+				font-weight: bold;
+			    border-bottom: 4px solid white;
+		        -webkit-transition: width,0.6s,linear;
+			    -moz-transition: width,0.6s,linear;
+			    transition: width,0.6s,linear;
+			}
+		}
 
-// Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+		li.active {
+			a {
+				font-weight: bold;
+			    border-bottom: 4px solid white;
+		        -webkit-transition: width,0.6s,linear;
+			    -moz-transition: width,0.6s,linear;
+			    transition: width,0.6s,linear;
+			}
+		}
+	}
 
-// Variables
-@import "variables";
+	.navbar-brand {
+	    border-bottom: 1px solid gray;
+	}
+	.menu-title {
+	    border-bottom: 1px solid gray;
+	}
+}
 
-// Bootstrap
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+header {
+	.form-inline {
+		background: #17a2b8;
+
+		.search-form {
+			input {
+				background: #17a2b8 !important;
+				color: white !important;
+			}
+
+			input::placeholder {
+				color: white !important;
+			}
+		}
+	}
+}
+
+.card {
+	.wrapper {
+		position: relative;
+		overflow: hidden;
+        height: 150px;
+	    width: auto;
+	    background: #e9ecef;
+
+	  	:after {
+			content: '';
+			display: block;
+			padding-top: 100%;
+		}
+
+		img {
+			width: auto;
+			height: 100%;
+			max-width: none;
+			position: absolute;
+			left: 50%;
+			top: 0;
+			transform: translateX(-50%);
+		}
+	}
+}
